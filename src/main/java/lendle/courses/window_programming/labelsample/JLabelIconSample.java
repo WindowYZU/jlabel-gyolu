@@ -38,7 +38,10 @@ public class JLabelIconSample {
         //3. 設定到 label1
         //ImageIcon icon=new ImageIcon(new URL());
         //Icon icon2=new ImageIcon(icon.getImage().getScaledInstance());
-        
+        ImageIcon icon=new ImageIcon(new URL("http://icons.iconarchive.com/icons/aha-soft/free-3d-glossy-interface/64/search-icon.png"));
+        icon=new ImageIcon(icon.getImage().getScaledInstance(25, 25, java.awt.Image.SCALE_SMOOTH));
+        label1.setIcon(icon);
+
         ////////////////////////////
      
         frame.add(label1);
